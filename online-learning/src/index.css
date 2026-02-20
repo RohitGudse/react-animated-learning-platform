@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: #111;
+  color: white
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  background: #eee
+}
+
+.progress {
+  background: #ddd;
+  height: 12px;
+  border-radius: 10px
+}
+
+.fill {
+  background: green;
+  height: 12px;
+  border-radius: 10px
+}
+
+.sidebar {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 20px
+}
+
+.stats div {
+  margin: 10px 0
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: #0007;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.box {
+  background: white;
+  padding: 20px
+}
+
+.dark {
+  background: #111;
+  color: white
+}
