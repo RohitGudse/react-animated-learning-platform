@@ -7,6 +7,6 @@ export default function QuizOption({ text, correct, add }) {
   return (
     <button type="button" onClick={handleClick}>
       {text}
-    </button>
+    </button> 
   );
 }
