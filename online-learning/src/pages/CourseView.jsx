@@ -1,24 +1,30 @@
+
 import { Outlet } from "react-router-dom";
 import LessonList from "../components/LessonList";
 
-const COURSE_LESSONS = [
-  { id: 1, title: "Intro" },
-  { id: 2, title: "Hooks" },
-  { id: 3, title: "Routing" },
+const lessons = [
+  { id: 1, title: "Introduction" },
+  { id: 2, title: "React Hooks" },
+  { id: 3, title: "React Routing" },
 ];
 
-function CourseView() {
-  return (
-    <main className="course-layout">
-      <aside className="course-sidebar">
-        <LessonList lessons={COURSE_LESSONS} />
-      </aside>
+const CourseView = () => {
+  const courseLessons = lessons.map((lesson) => ({
+    ...lesson,
+  }));
 
-      <section className="course-content">
+  return (
+    <div className="course-layout">
+      <nav className="course-sidebar">
+        <LessonList lessons={courseLessons} />
+      </nav>
+
+      <article className="course-content">
         <Outlet />
-      </section>
-    </main>
+      </article>
+    </div>
   );
-}
+};
 
 export default CourseView;
+
